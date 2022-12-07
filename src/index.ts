@@ -3,7 +3,6 @@ import fs from 'fs';
 
 
 
-
 const program = async (url: string, depth: number) => {
     const gotModule = await import('got');
     const gotBody = (url: string) => gotModule.got(url).then(r => r.body);
@@ -11,7 +10,7 @@ const program = async (url: string, depth: number) => {
     await new Promise(resolve => fs.writeFile("results.json", JSON.stringify(result), resolve));
 }
 
-
+// process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
 const [url, sDepth] = process.argv.slice(2);
 program(url, parseInt(sDepth));
 

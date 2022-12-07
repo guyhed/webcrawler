@@ -22,6 +22,14 @@ describe('webCrawler', () => {
             expect(r[0].depth).toEqual(1);
         });
     });
+    describe('page with children nad loop', () => {
+        test('get the images', async () => {
+            const r = await webCrawler(gotBody, testCases[2].url, 3);
+            expect(r.length).toEqual(2);
+            expect(r[0].depth).toEqual(0);
+            expect(r[1].depth).toEqual(1);
+        });
+    });
 
 });
 

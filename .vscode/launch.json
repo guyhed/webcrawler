@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            },
+            "program": "${workspaceFolder}/dist/index.js",
+            "args": [
+                "https://www.flickr.com/photos/73666577@N00/8774293886/in/photolist-enmxT5-9kT5dJ-fMJFzS-qwx96G-iePSeJ-fBTx6d-4EV2UP-fAzvRd-bxDj5A-D59nvt-uBLHsB-qeCKVS-dcx8Cw-pUGPgg-DrNn7Z-ax1Bfn-DrN8fv-zy1jmx-mrz68H-9GSj4w-mrzJwb-mrv4uT-mrzjeH-84UT4Q-o8WiMK-21KQZ9r-mrxRsP-mrAgkf-mrz4mr-mrBmdu-eP1hVU-mryEai-mrzc7M-mrzoXS-k73EzB-21KQZtz-J9LzDa-mrxB9i-9ykyAu-mryGoM-85PNmp-ooo1bq-ppo25C-mrxyV2-oaF1wu-mrzt7H-mrxiqc-mrz81n",
+                "0"
+            ],
+        }
+    ]
+}
